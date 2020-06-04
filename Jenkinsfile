@@ -14,4 +14,5 @@ node {
                 app.inside {
             echo "Tests passed"
         }
+	}
    }
