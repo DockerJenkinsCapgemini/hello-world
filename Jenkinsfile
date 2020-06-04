@@ -11,8 +11,6 @@ node {
         app = docker.build("hello-world")
     }
 	stage('Test image') {
-                app.inside {
-            echo "Tests passed"
+                echo "Tests passed"
         }
-	}
    }
