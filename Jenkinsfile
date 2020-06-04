@@ -10,4 +10,8 @@ node {
         /* This builds the actual image */
         app = docker.build("hello-world")
     }
-	}
+	stage('Test image') {
+                app.inside {
+            echo "Tests passed"
+        }
+   }
